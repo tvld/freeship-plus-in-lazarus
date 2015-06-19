@@ -25,7 +25,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.8713264"
+     inkscape:zoom="4.6718623"
      inkscape:cx="48.35615"
      inkscape:cy="45.518603"
      inkscape:document-units="px"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,6 +77,11 @@
          id="path110339"
          d="m 1272,162.36216 0,32"
          style="fill:none;fill-rule:evenodd;stroke:#0099ff;stroke-width:2.12240624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path110335"
+         d="m 1245.9807,171.25019 0,37 46,-24 0,-27 z"
+         style="fill:#cccccc;fill-rule:evenodd;stroke:#12527f;stroke-width:2.12240624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.96078431" />
       <g
          style="stroke:#12527f;stroke-width:2.12240624;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.92156863"
          id="g110410">
@@ -98,17 +103,12 @@
            inkscape:connector-curvature="0" />
       </g>
       <path
-         inkscape:connector-curvature="0"
-         id="path110335"
-         d="m 1247,170.36216 0,37 46,-24 0,-27 z"
-         style="fill:none;fill-rule:evenodd;stroke:#12527f;stroke-width:2.12240624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.96078431" />
-      <path
          sodipodi:nodetypes="cccccccc"
          inkscape:connector-curvature="0"
          id="path110345"
-         transform="translate(0,-227.63784)"
          d="m 1272.2539,390.31445 -17.2871,-5.6582 0.062,9.98242 m 17.2246,-4.32422 -0.2519,31.5 16.041,6.70508 0,-33.03906 z"
-         style="fill:#c77711;fill-opacity:1;fill-rule:evenodd;stroke:#bb1525;stroke-width:2.12240624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#c77711;fill-opacity:1;fill-rule:evenodd;stroke:#bb1525;stroke-width:2.12240624;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="translate(0,-227.63784)" />
     </g>
   </g>
 </svg>

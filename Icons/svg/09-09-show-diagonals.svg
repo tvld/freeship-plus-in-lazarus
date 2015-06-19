@@ -16,7 +16,7 @@
    xml:space="preserve"
    id="svg2"
    inkscape:version="0.91 r"
-   sodipodi:docname="13-show-diagonals.svg"><metadata
+   sodipodi:docname="09-09-show-diagonals.svg"><metadata
      id="metadata10"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
@@ -33,9 +33,9 @@
      inkscape:window-height="480"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="6.760553"
-     inkscape:cx="-14.156908"
-     inkscape:cy="20.297909"
+     inkscape:zoom="14.93705"
+     inkscape:cx="19.348821"
+     inkscape:cy="30.503225"
      inkscape:current-layer="show_diagonals"
      showguides="true"
      inkscape:guide-bbox="true"><sodipodi:guide
@@ -79,7 +79,12 @@
                    id="title4661">FreeShip Icon</title><g
                    style="display:inline;opacity:0.95999995"
                    id="show_diagonals"
-                   transform="matrix(22.409933,-2.7853554e-8,4.340326e-8,22.409933,-19250.796,-11509.192)"><g
+                   transform="matrix(22.409933,-2.7853554e-8,4.340326e-8,22.409933,-19250.796,-11509.192)"><path
+                     style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:1.15162694px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                     d="m 721.90433,519.69375 25.44257,-5.474 26.52195,5.6282 c 4.06756,21.62531 -8.83421,29.41155 -25.75097,33.92342 -28.67209,-6.71699 -26.68402,-20.57401 -26.21355,-34.07762 z"
+                     id="path3365"
+                     inkscape:connector-curvature="0"
+                     sodipodi:nodetypes="ccccc" /><g
                      style="stroke:#12527f;stroke-width:1.15162686;stroke-miterlimit:4;stroke-dasharray:1.15162686,2.30325373;stroke-dashoffset:0"
                      transform="translate(510,-265)"
                      id="g110585"><g

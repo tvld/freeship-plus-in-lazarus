@@ -337,9 +337,9 @@
      inkscape:window-height="480"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="3.2347093"
-     inkscape:cx="-40.485568"
-     inkscape:cy="-0.73875131"
+     inkscape:zoom="12.938837"
+     inkscape:cx="36.521838"
+     inkscape:cy="38.999467"
      inkscape:current-layer="freeship-icon"
      showguides="true"
      inkscape:guide-bbox="true"><sodipodi:guide
@@ -380,7 +380,11 @@
                  transform="translate(3199.4151,243.89558)"
                  id="freeship-icon"><desc
                    id="desc4663">FreeShip Icon by Soenke J. Peters remodeled after the original tiny PNG icon</desc><title
-                   id="title4661">FreeShip Icon</title><rect
+                   id="title4661">FreeShip Icon</title><path
+                   style="fill:#cccccc;fill-rule:evenodd;stroke:none;stroke-width:25.8078804px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                   d="m -2817.0534,82.187264 69.8112,857.680536 528.5705,-5.98382 83.7735,-855.685919 z"
+                   id="path3414"
+                   inkscape:connector-curvature="0" /><rect
                    style="opacity:1;fill:#c77711;fill-opacity:1;stroke:#c01021;stroke-width:25.8078804;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:25.807881, 51.61576199999999659;stroke-dashoffset:0;stroke-opacity:1"
                    id="rect4182"
                    width="64.783791"
