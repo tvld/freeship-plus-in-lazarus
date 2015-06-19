@@ -16,60 +16,41 @@
 
 echo "Create png from each svg & copying png to png folder..."
 
-COUNTER=0
+CURRENTFOLDER=${PWD##*/}
 
-for image in `ls svg/*.svg | sort -V`; 
+for RES in 16 24 32 48 128
 do
- 
-	echo "$COUNTER Converting $image..."
-	convert -density 1200 -trim -resize 16x16 -gravity center -background transparent -extent 16x16  $image PNG32:$image.png
-	cp $image.png png-16
+	COUNTER=0
 	
-	convert -density 1200 -trim -resize 24x24 -gravity center -background transparent -extent 24x24  $image PNG32:$image.png
-	cp $image.png png-24
+	for filename in `ls svg/*.svg | sort -V`; 
+	do
+	 	image="${filename%.*}"
+		echo "$COUNTER Converting $image to ${RES}x${RES}..."
+		convert -density 1200 -trim -resize ${RES}x${RES} -gravity center -background transparent -extent ${RES}x${RES}  $image.svg PNG32:$image.png
+		# dropshadow
+		# convert $image.png  \( +clone -background white -shadow 50x4+3+3 -channel A -level 0,10% +channel \) -compose DstOver -gravity center -composite $image.png
+
+		mv $image.png png-${RES}
 	
-	convert -density 1200 -trim -resize 32x32 -gravity center -background transparent -extent 32x32  $image PNG32:$image.png
-	cp $image.png png-32
+		COUNTER=$((COUNTER+1))
+
+	done
 	
-	convert -density 1200 -trim -resize 48x48 -gravity center -background transparent -extent 48x48  $image PNG32:$image.png
-	cp $image.png png-48
-	
-	convert -density 1200 -trim -resize 64x64 -gravity center -background transparent -extent 64x64  $image PNG32:$image.png
-	cp $image.png png-64
-		
-	convert -density 1200 -trim -resize 128x128 -gravity center -background transparent -extent 128x128  $image PNG32:$image.png
-	cp $image.png png-128
-	
-	COUNTER=$((COUNTER+1))
+	echo "Creating horizontal ${RES} sprite..."
+	rm png-${RES}/icon-sprite-${RES}.png
+	convert +append png-${RES}/*.png PNG32:png-${RES}/icon-sprite-${RES}.png
+	# echo "Compressing final icon"
+	# convert -quality 0 +dither icon_sprite_set_uc.png PNG32:${CURRENTFOLDER}_sprite.png
 
 done
 
-
-echo "Appending horizontally..."
-convert +append svg/*.png PNG32:icon_set_hor.png
-#echo "Apply drop shadow"
-#convert icon_set_hor.png  \( +clone -background black -shadow 50x4+1+1 -channel A -level 0,50% +channel \) -compose DstOver -gravity center -composite icon_sprite_set_uc.png
-# no shadow, so move it
-mv icon_set_hor.png icon_sprite_set_uc.png
-CURRENTFOLDER=${PWD##*/}
-echo "Compressing final icon"
-convert -quality 0 +dither icon_sprite_set_uc.png PNG32:${CURRENTFOLDER}_sprite.png
-
-
 echo "Creating preview image with dark background"
 # +repage needed to keep image same size
-convert -background "#444444" -flatten +repage -border 10x10 -bordercolor "#444444" ${CURRENTFOLDER}_sprite.png preview/${CURRENTFOLDER}_sprite_preview_dark.png
+convert -background "#444444" -flatten +repage -border 10x10 -bordercolor "#444444" png-24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_dark.png
 
 echo "Creating preview image with white background"
-convert -background "#ffffff" -flatten +repage -border 10x10 -bordercolor "#ffffff" ${CURRENTFOLDER}_sprite.png preview/${CURRENTFOLDER}_sprite_preview_white.png
+convert -background "#ffffff" -flatten +repage -border 10x10 -bordercolor "#ffffff" png-24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_white.png
 
-mv ${CURRENTFOLDER}_sprite.png png-48
-
-echo "Removing temp files"
-rm svg/*.png
-#rm icon_set_hor.png
-rm icon_sprite_set_uc.png
-
-echo "Ready, $COUNTER .png images moved to icon_sprite_set.png "
+echo "Ready, $COUNTER .png images converted. "
 
 
