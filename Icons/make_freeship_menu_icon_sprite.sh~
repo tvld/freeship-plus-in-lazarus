@@ -45,7 +45,6 @@ mv icon_set_hor.png icon_sprite_set_uc.png
 CURRENTFOLDER=${PWD##*/}
 echo "Compressing final icon"
 convert -quality 0 +dither icon_sprite_set_uc.png PNG32:${CURRENTFOLDER}_sprite.png
-mv ${CURRENTFOLDER}_sprite.png png-48
 
 
 echo "Creating preview image with dark background"
@@ -54,6 +53,8 @@ convert -background "#444444" -flatten +repage -border 10x10 -bordercolor "#4444
 
 echo "Creating preview image with white background"
 convert -background "#ffffff" -flatten +repage -border 10x10 -bordercolor "#ffffff" ${CURRENTFOLDER}_sprite.png preview/${CURRENTFOLDER}_sprite_preview_white.png
+
+mv ${CURRENTFOLDER}_sprite.png png-48
 
 echo "Removing temp files"
 rm svg/*.png

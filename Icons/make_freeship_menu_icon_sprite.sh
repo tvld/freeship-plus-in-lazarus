@@ -28,8 +28,14 @@ do
 	convert -density 1200 -trim -resize 32x32 -gravity center -background transparent -extent 32x32  $image PNG32:$image.png
 	cp $image.png png-32
 	
-	convert -density 1200 -trim -resize 38x48 -gravity center -background transparent -extent 48x48  $image PNG32:$image.png
+	convert -density 1200 -trim -resize 48x48 -gravity center -background transparent -extent 48x48  $image PNG32:$image.png
 	cp $image.png png-48
+	
+	convert -density 1200 -trim -resize 64x64 -gravity center -background transparent -extent 64x64  $image PNG32:$image.png
+	cp $image.png png-64
+		
+	convert -density 1200 -trim -resize 128x128 -gravity center -background transparent -extent 128x128  $image PNG32:$image.png
+	cp $image.png png-128
 	
 	COUNTER=$((COUNTER+1))
 
