@@ -22,6 +22,9 @@ for image in `ls svg/*.svg | sort -V`;
 do
  
 	echo "$COUNTER Converting $image..."
+	convert -density 1200 -trim -resize 16x16 -gravity center -background transparent -extent 16x16  $image PNG32:$image.png
+	cp $image.png png-16
+	
 	convert -density 1200 -trim -resize 24x24 -gravity center -background transparent -extent 24x24  $image PNG32:$image.png
 	cp $image.png png-24
 	
