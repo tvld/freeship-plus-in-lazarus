@@ -18,7 +18,7 @@ echo "Create png from each svg & copying png to png folder..."
 
 CURRENTFOLDER=${PWD##*/}
 
-for RES in 16 24 32 48 128
+for RES in 16 24 32 48 64 128
 do
 	COUNTER=0
 	

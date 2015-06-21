@@ -30,15 +30,17 @@ do
 		# dropshadow
 		# convert $image.png  \( +clone -background white -shadow 50x4+3+3 -channel A -level 0,10% +channel \) -compose DstOver -gravity center -composite $image.png
 
-		mv $image.png png-${RES}
+		mv $image.png ./${RES}
 	
 		COUNTER=$((COUNTER+1))
 
 	done
 	
 	echo "Creating horizontal ${RES} sprite..."
-	rm png-${RES}/icon-sprite-${RES}.png
-	convert +append png-${RES}/*.png PNG32:png-${RES}/icon-sprite-${RES}.png
+	# remove old sprite to avoid appending forever
+	rm ./${RES}/icon-sprite-${RES}.png
+	# make new sprite
+	convert +append ./${RES}/*.png PNG32:./${RES}/icon-sprite-${RES}.png
 	# echo "Compressing final icon"
 	# convert -quality 0 +dither icon_sprite_set_uc.png PNG32:${CURRENTFOLDER}_sprite.png
 
@@ -46,10 +48,10 @@ done
 
 echo "Creating preview image with dark background"
 # +repage needed to keep image same size
-convert -background "#444444" -flatten +repage -border 10x10 -bordercolor "#444444" png-24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_dark.png
+convert -background "#444444" -flatten +repage -border 10x10 -bordercolor "#444444" ./24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_dark.png
 
 echo "Creating preview image with white background"
-convert -background "#ffffff" -flatten +repage -border 10x10 -bordercolor "#ffffff" png-24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_white.png
+convert -background "#ffffff" -flatten +repage -border 10x10 -bordercolor "#ffffff" ./24/icon-sprite-24.png preview/${CURRENTFOLDER}_sprite_preview_white.png
 
 echo "Ready, $COUNTER .png images converted. "
 
