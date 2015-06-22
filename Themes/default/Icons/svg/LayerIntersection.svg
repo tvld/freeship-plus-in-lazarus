@@ -65,9 +65,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.0082144"
-     inkscape:cx="-3.976142"
-     inkscape:cy="44.948956"
+     inkscape:zoom="10.497549"
+     inkscape:cx="28.568517"
+     inkscape:cy="61.349052"
      inkscape:document-units="px"
      inkscape:current-layer="find_intersection"
      showgrid="false"
@@ -131,14 +131,14 @@
            transform="matrix(0.67817263,0.42339529,0,1,307.73122,0.66178258)" />
         <rect
            transform="matrix(0.94854389,-0.31664567,0,1,0,0)"
-           ry="2.0283611"
-           rx="1.4680477"
+           ry="0"
+           rx="0"
            y="1076.6121"
            x="1273.2717"
            height="34.261932"
            width="45.837685"
            id="rect34306"
-           style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#12527f;stroke-width:2.05353117;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           style="opacity:1;fill:#c77711;fill-opacity:1;fill-rule:evenodd;stroke:#12527f;stroke-width:2.05401731;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         <rect
            transform="matrix(-0.66477426,-0.42339529,0,-1,2131.4716,1366.3639)"
            style="opacity:1;fill:#c2c2c2;fill-opacity:1;fill-rule:evenodd;stroke:#12527f;stroke-width:2.45297384;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
