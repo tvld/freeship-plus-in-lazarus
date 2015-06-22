@@ -15,7 +15,7 @@
    xml:space="preserve"
    id="svg2"
    inkscape:version="0.91 r"
-   sodipodi:docname="09-06-show-stations.svg"><metadata
+   sodipodi:docname="ShowStations.svg"><metadata
      id="metadata10"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
@@ -32,10 +32,10 @@
      inkscape:window-height="480"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="5.1066323"
-     inkscape:cx="-16.70005"
+     inkscape:zoom="5.2202032"
+     inkscape:cx="-51.085685"
      inkscape:cy="42.124905"
-     inkscape:current-layer="show_grid" /><g
+     inkscape:current-layer="g4138" /><g
      id="g4256"
      transform="matrix(0.70228793,0.58928954,-0.98819841,0.57053662,51.140811,-8.2542624)"><g
        id="g4231"><g
@@ -43,7 +43,7 @@
          transform="matrix(1.0615882,0.23569733,-0.36513985,0.86091532,12.027274,-3.7367684)"><g
            id="show_bothsides"
            transform="matrix(0.24381107,-0.67138813,0.97802323,0.45282175,-179.13772,146.28066)"
-           style="display:inline;opacity:0.95999995;stroke-width:2.30325365;stroke-miterlimit:4;stroke-dasharray:none"><g
+           style="display:inline;opacity:1;stroke-width:2.30325365;stroke-miterlimit:4;stroke-dasharray:none"><g
              style="display:inline;opacity:0.95999995"
              id="show_grid"
              transform="matrix(0.98890276,0,0,0.98890276,-476.33259,81.990156)"><path
@@ -109,4 +109,8 @@
                    inkscape:connector-curvature="0"
                    id="path110489"
                    d="m 211.96173,784.98569 c 14.14145,-4.28813 25.85077,-5.24853 25.85077,-5.24853"
-                   style="fill:none;fill-rule:evenodd;stroke:#12527f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></g></g></g></g></g></svg>
+                   style="fill:none;fill-rule:evenodd;stroke:#12527f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g></g><g
+             inkscape:groupmode="layer"
+             id="layer1"
+             inkscape:label="Layer 1"
+             style="" /></g></g></g></g></svg>

@@ -65,8 +65,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.4437346"
-     inkscape:cx="35.193419"
+     inkscape:zoom="4.0082144"
+     inkscape:cx="-3.976142"
      inkscape:cy="44.948956"
      inkscape:document-units="px"
      inkscape:current-layer="find_intersection"
@@ -99,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -107,13 +107,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-976.36216)">
+     transform="translate(0,-976.36216)"
+     style="display:inline">
     <g
        id="insert_plane"
        transform="matrix(0.99745636,0,0,0.88129555,-1229.8103,855.15858)"
-       style="display:inline;opacity:0.95999995;stroke-width:2.12240624;stroke-miterlimit:4;stroke-dasharray:none">
+       style="display:inline;opacity:1;stroke-width:2.12240624;stroke-miterlimit:4;stroke-dasharray:none">
       <g
-         style="display:inline;opacity:0.95999995;fill:#ffffff;stroke:#12527f"
+         style="display:inline;opacity:1;fill:#ffffff;stroke:#12527f"
          id="find_intersection"
          transform="matrix(1.0063551,0,0,0.94698757,33.209109,-463.53773)"
          clip-path="url(#clipPath116078)">
@@ -155,6 +156,10 @@
            d="m 1228.9801,669.09294 0,30.2253"
            style="fill:#c01021;fill-rule:evenodd;stroke:#c01021;stroke-width:2.85939097;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="Layer 2" />
     </g>
   </g>
 </svg>
